@@ -1,0 +1,12 @@
+@import 'mixin';
+
+@include font-face('Roboto', '../fonts/roboto/roboto-light.ttf', 300, normal);
+@include font-face('Roboto', '../fonts/roboto/roboto-medium.ttf', 500, normal);
+@include font-face('Roboto', '../fonts/roboto/roboto-black.ttf', 900, normal);
+
+$font: 'Roboto', sans-serif;
+$mainColor: #ffde7d;
+$textColor: #eeeeee;
+$backgroundColor: #393e46;
+$headingsColor: #222831;
+
