@@ -8,6 +8,7 @@ $font: 'Roboto', sans-serif;
 $mainColor: #ffde7d;
 $textColor: #eeeeee;
 $backgroundColor: #393e46;
+$additionalColor: #c9d6df;
 $headingsColor: #222831;
 
 * {
@@ -48,3 +49,5 @@ a {
 }
 
 @import 'header';
+
+@import 'media';
