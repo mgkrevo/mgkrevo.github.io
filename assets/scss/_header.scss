@@ -1,0 +1,135 @@
+.page- {
+    &header {
+        height: 80px;
+        background-color: $headingsColor;
+    }
+
+    &nav {
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-top: 2px solid $mainColor;
+        background-color: $headingsColor;
+        overflow-y: hidden;
+        transition: height linear 200ms;
+
+        &.active {
+            height: 132px;
+        }
+    }
+
+}
+
+.nav- {
+    &img {
+        width: 64px;
+        height: 64px;
+        border: 2px solid $mainColor;
+        border-radius: 50%;
+    }
+
+    &item {
+        display: block;
+    }
+
+    &link {
+        width: 100%;
+        height: 30px;
+        text-transform: uppercase;
+        color: $textColor;
+
+        &.active {
+            color: $mainColor;
+        }
+    }
+}
+
+.language- {
+    &select {
+        position: relative;
+        display: inline-block;
+        margin-right: 20px;
+        height: 25px;
+
+        img {
+            width: 32px;
+        }
+    }
+
+    &current {
+        display: inline-flex;
+        align-items: center;
+        padding: 2px 5px;
+        height: 100%;
+
+        img {
+            border: 1px solid $mainColor;
+        }
+
+        i {
+            font-size: 14px;
+            margin-left: 5px;
+            color: $mainColor;
+            transform: rotate(0deg);
+            transition: transform linear 200ms;
+        }
+
+        &.active {
+            background-color: $textColor;
+
+            i {
+                transform: rotate(-180deg);
+                color: $headingsColor;
+            }
+        }
+    }
+
+    &options {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 0px;
+        background-color: $textColor;
+        overflow-y: hidden;
+        transition: height linear 200ms;
+
+        &_item {
+            width: 100%;
+            height: 100%;
+            padding: 2px 5px;
+            border-top: 1px solid $headingsColor;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &.active {
+            height: 56px;
+        }
+    }
+}
+
+.mobile-toggle {
+    display: inline-block;
+    font-size: 30px;
+    width: 32px;
+    height: 32px;
+    color: $mainColor;
+}
+

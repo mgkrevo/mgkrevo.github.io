@@ -16,5 +16,154 @@
   font-weight: 900;
   font-style: normal;
 }
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline-style: none;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+nav li, ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  height: 100%;
+}
+
+.page {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.page-header {
+  height: 80px;
+  background-color: #222831;
+}
+.page-nav {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 2px solid #ffde7d;
+  background-color: #222831;
+  overflow-y: hidden;
+  transition: height linear 200ms;
+}
+.page-navbar.active {
+  height: 132px;
+}
+
+.nav-img {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #ffde7d;
+  border-radius: 50%;
+}
+.nav-item {
+  display: block;
+}
+.nav-link {
+  width: 100%;
+  height: 30px;
+  text-transform: uppercase;
+  color: #eeeeee;
+}
+.nav-link.active {
+  color: #ffde7d;
+}
+
+.language-select {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  height: 25px;
+}
+.language-select img {
+  width: 32px;
+}
+.language-current {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 5px;
+  height: 100%;
+}
+.language-current img {
+  border: 1px solid #ffde7d;
+}
+.language-current i {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #ffde7d;
+  transform: rotate(0deg);
+  transition: transform linear 200ms;
+}
+.language-current.active {
+  background-color: #eeeeee;
+}
+.language-current.active i {
+  transform: rotate(-180deg);
+  color: #222831;
+}
+.language-options {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 0px;
+  background-color: #eeeeee;
+  overflow-y: hidden;
+  transition: height linear 200ms;
+}
+.language-options_item {
+  width: 100%;
+  height: 100%;
+  padding: 2px 5px;
+  border-top: 1px solid #222831;
+}
+.language-options_item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.language-options.active {
+  height: 56px;
+}
+
+.mobile-toggle {
+  display: inline-block;
+  font-size: 30px;
+  width: 32px;
+  height: 32px;
+  color: #ffde7d;
+}
 
 /*# sourceMappingURL=main.css.map */

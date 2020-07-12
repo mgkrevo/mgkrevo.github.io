@@ -10,3 +10,41 @@ $textColor: #eeeeee;
 $backgroundColor: #393e46;
 $headingsColor: #222831;
 
+* {
+    padding: 0;
+    margin: 0;
+    @include user-select(none);
+    outline-style: none;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+nav, ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    font-family: $font;
+}
+
+@import 'header';
